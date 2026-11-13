@@ -37,6 +37,9 @@ android {
 }
 
 dependencies {
+    // Coil
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     // Retrofit with Kotlin serialization Converter
