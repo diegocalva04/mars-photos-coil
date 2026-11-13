@@ -47,3 +47,23 @@ Se clonó `diegocalva04/MarsPhotos-ObtenerDatosInternet-Android` en una carpeta 
 
 El historial anterior de la práctica REST permanece sin reescritura. La ampliación está publicada como commits incrementales en la rama `codelab-repositorio-di`, disponible en https://github.com/diegocalva04/MarsPhotos-ObtenerDatosInternet-Android/tree/codelab-repositorio-di.
 
+
+## Commits del codelab de Coil
+
+La rama `main` de este repositorio independiente parte del historial previo de Mars Photos (`1106e32`). Estos commits añadidos describen los avances implementados para “Cómo cargar y mostrar imágenes de Internet”.
+
+| Hash | Mensaje | Etapa registrada |
+| --- | --- | --- |
+| `b3af58f` | `chore: registrar el estado inicial de Mars Photos` | Captura real del estado inicial antes de integrar Coil. |
+| `41741a6` | `feat: integrar Coil para cargar imágenes remotas` | Dependencia Coil Compose 2.4.0. |
+| `ce24c21` | `feat: mostrar la URL de la primera fotografía de Marte` | Comprobación intermedia de la URL recibida. |
+| `76415c8` | `feat: mostrar la primera fotografía de Marte con AsyncImage` | Imagen individual con ImageRequest y crossfade. |
+| `eb3d7ca` | `feat: recortar la imagen para ocupar el área disponible` | ContentScale.Crop y comprobación en ambas orientaciones. |
+| `2af44a1` | `feat: configurar imágenes de carga y error en Coil` | Recursos de placeholder y error. |
+| `8d1b155` | `feat: organizar las fotografías en una cuadrícula adaptable` | Lista, LazyVerticalGrid, columnas adaptables y claves. |
+| `a1622b0` | `feat: presentar las fotografías en tarjetas con proporción uniforme` | Card, espaciado, proporción y vista previa. |
+| `d68f041` | `docs: registrar los errores de carga al activar modo avión` | Captura auténtica de solicitudes de imagen fallidas sin conexión. |
+| `b8cf434` | `feat: permitir reintentar la carga de fotografías` | Acción Retry y capturas de fallo/recuperación. |
+| `a4b67e7` | `test: validar el estado Success con la lista de fotografías` | Actualización y ejecución de la prueba del ViewModel. |
+
+Los identificadores abreviados corresponden a los commits publicados en `main`. El historial previo de la aplicación y de la práctica de repositorio/DI permanece conservado; no se reescribieron los commits de origen.

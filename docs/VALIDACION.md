@@ -77,3 +77,23 @@ La ampliación se realizó sobre un clon local separado de `main` en la rama `co
 
 El número 838 corresponde a la respuesta observada durante esta ejecución y puede variar si cambia el servicio. La prueba gráfica de esta ampliación comprobó el estado Success. No se volvió a probar modo avión ni recuperación sin red; esas evidencias del proyecto anterior se conservan en su registro histórico. No se ejecutaron pruebas instrumentadas.
 
+
+## Validación del codelab de Coil e imágenes remotas
+
+| Comprobación | Resultado |
+| --- | --- |
+| Punto de partida | El clon independiente compila y las pruebas previas pasan. En el teléfono se observa el mensaje inicial de recuperación de fotografías. |
+| Integración de Coil | `coil-compose:2.4.0` se sincroniza; `assembleDebug` finaliza correctamente. |
+| Comprobación de URL | `MarsViewModel` recupera el primer `MarsPhoto`; en pantalla se observó la URL real `https://mars.jpl.nasa.gov/msl-raw-images/msss/01000/mcam/1000MR0044631300503690E01_DXXX.jpg`. |
+| Imagen y escalado | Coil muestra la fotografía real. `ContentScale.Crop` se comprobó en vertical y horizontal en el teléfono. |
+| Placeholder y error de imagen | Se reutilizaron `loading_img.xml` e `ic_broken_image.xml`. La conexión rápida no permitió capturar el placeholder durante su breve aparición. |
+| Cuadrícula | La respuesta completa se muestra mediante `LazyVerticalGrid`, columnas `Adaptive(150.dp)` y claves `photo.id`. |
+| Tarjetas y vista previa | Se aplicaron `Card` con elevación de 8.dp, padding de 4.dp, proporción 1.5f y la lista ficticia de diez elementos indicada por la guía. |
+| Modo avión | Con la lista ya cargada, las imágenes nuevas que no estaban en caché mostraron el recurso de imagen rota. Las imágenes previamente descargadas permanecieron visibles por caché. La evidencia es una captura real del dispositivo. |
+| Reintento | Con la red desactivada se observó `Failed to load` y el botón `Retry`. Tras restablecer la red y pulsarlo, se recuperó la cuadrícula. |
+| Pruebas unitarias | Tres pruebas aprobadas; cero fallos, errores u omitidas. La prueba de `MarsViewModel` compara `MarsUiState.Success` con `FakeDataSource.photosList`. |
+| Compilación y Lint | `testDebugUnitTest`, `assembleDebug` y `lintDebug` finalizaron con `BUILD SUCCESSFUL`. |
+| Dispositivo | Teléfono Xiaomi 23100RN82L, Android 15/API 35. El emulador disponible no respondía; por ello, la validación se hizo en el teléfono ya conectado. |
+| Publicación | Repositorio público `diegocalva04/mars-photos-coil`, rama `main`. Se conserva como repositorio separado y no se modifica el remoto de la práctica anterior; capturas del repositorio y del historial en `12-historial-github.png` y `13-repositorio-github-publico.png`. |
+
+Las capturas numeradas desde `01` hasta `13` se encuentran en `docs/evidencias/`. La evidencia del resumen de pruebas de Gradle está en `11-resultados-pruebas-unitarias.png`. No se ejecutaron pruebas instrumentadas. La pantalla de carga del placeholder no se capturó porque su tiempo de exposición fue demasiado breve en la conexión disponible; no se fabricó esa evidencia.
