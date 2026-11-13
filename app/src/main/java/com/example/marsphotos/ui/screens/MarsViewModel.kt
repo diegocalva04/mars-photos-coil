@@ -52,7 +52,7 @@ class MarsViewModel(private val marsPhotosRepository: MarsPhotosRepository) : Vi
     /**
      * Gets Mars photos information from the Mars API Retrofit service and updates [marsUiState].
      */
-    private fun getMarsPhotos() {
+    fun getMarsPhotos() {
         viewModelScope.launch {
             marsUiState = MarsUiState.Loading
             marsUiState = try {
