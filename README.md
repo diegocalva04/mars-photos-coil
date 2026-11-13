@@ -30,7 +30,9 @@ La aplicación se ejecutó en un teléfono Xiaomi 23100RN82L con Android 15/API 
 | Cuadrícula adaptable | [06-cuadricula-fotografias](docs/evidencias/06-cuadricula-fotografias.png) |
 | Cuadrícula con tarjetas | [07-cuadricula-tarjetas](docs/evidencias/07-cuadricula-tarjetas.png) |
 | Error de imágenes en modo avión | [08-cuadricula-modo-avion](docs/evidencias/08-cuadricula-modo-avion.png) |
-| Pantalla de error y recuperación con Retry | [09 pantalla de error](docs/evidencias/09-pantalla-error-reintento.png), [10 recuperación](docs/evidencias/10-reintento-recupera-cuadricula.png) |`n| Pruebas unitarias de Gradle | [11-resultados-pruebas-unitarias](docs/evidencias/11-resultados-pruebas-unitarias.png) |`n| Repositorio y commits públicos | [13 vista pública](docs/evidencias/13-repositorio-github-publico.png), [12 historial](docs/evidencias/12-historial-github.png) |
+| Pantalla de error y recuperación con Retry | [09 pantalla de error](docs/evidencias/09-pantalla-error-reintento.png), [10 recuperación](docs/evidencias/10-reintento-recupera-cuadricula.png) |
+| Pruebas unitarias de Gradle | [11-resultados-pruebas-unitarias](docs/evidencias/11-resultados-pruebas-unitarias.png) |
+| Repositorio y commits públicos | [13 vista pública](docs/evidencias/13-repositorio-github-publico.png), [12 historial](docs/evidencias/12-historial-github.png) |
 
 El desarrollo y los commits están disponibles en [GitHub: diegocalva04/mars-photos-coil](https://github.com/diegocalva04/mars-photos-coil). Consulta el [historial por etapas](docs/HISTORIAL.md) y el [registro de validación](docs/VALIDACION.md).
 

@@ -65,5 +65,6 @@ La rama `main` de este repositorio independiente parte del historial previo de M
 | `d68f041` | `docs: registrar los errores de carga al activar modo avión` | Captura auténtica de solicitudes de imagen fallidas sin conexión. |
 | `b8cf434` | `feat: permitir reintentar la carga de fotografías` | Acción Retry y capturas de fallo/recuperación. |
 | `a4b67e7` | `test: validar el estado Success con la lista de fotografías` | Actualización y ejecución de la prueba del ViewModel. |
+| `9a1fd68` | `docs: documentar el codelab de Coil y sus validaciones` | README, registro cronológico y resultados de validación del codelab. |
 
 Los identificadores abreviados corresponden a los commits publicados en `main`. El historial previo de la aplicación y de la práctica de repositorio/DI permanece conservado; no se reescribieron los commits de origen.
